@@ -9,4 +9,28 @@
 
 
 
+<details>
+<summary>LEDが点滅しない</summary>
+
+- resetの極性を良く見なさい
+</details>
+
+
+<details>
+<summary>LEDの点滅が速すぎる</summary>
+
+- 1秒のcount間違ってない?
+  - 50MHz => 50 * 10**6 = 50000000
+</details>
+
+
+
+
+<details>
+<summary>test</summary>
+
+- test
+</details>
+
+
 
