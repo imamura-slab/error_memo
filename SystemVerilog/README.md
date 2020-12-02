@@ -24,6 +24,15 @@
 </details>
 
 
+<details>
+<summary>xやzとの比較をしたい</summary>
+
+- aaa === 'x
+  - イコールは3つ
+  - シングルクォーテーションは左側だけ
+</details>
+
+
 
 
 <details>
