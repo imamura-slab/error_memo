@@ -33,6 +33,13 @@
 </details>
 
 
+<details>
+<summary>instance '***' of design unit '***' is unresolved in '*.sv' </summary>
+
+- Makefileにちゃんと依存関係のあるsvファイルを含める
+</details>
+
+
 
 
 <details>
