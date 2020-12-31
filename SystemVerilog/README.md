@@ -40,6 +40,24 @@
 </details>
 
 
+<details>
+<summary>generate文で作ったインスタンスを指定したい</summary>
+
+```SystemVerilog
+	genvar i;
+	generate
+		for(i=0;i<10;i++)begin : gen
+			aaa #(.bbb(bbb)) aaa_inst(.ccc(ccc));
+		end
+	endgenerate
+```
+- 0番目のインスタンスを指定したい場合
+  - `gen[0].aaa_inst`
+</details>
+
+
+
+
 
 
 <details>
