@@ -43,6 +43,7 @@
 <details>
 <summary>generate文で作ったインスタンスを指定したい</summary>
 
+- `ラベル名[番号].インスタンス名`
 ```SystemVerilog
 	genvar i;
 	generate
