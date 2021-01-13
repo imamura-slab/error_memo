@@ -1,25 +1,31 @@
 # SystemVerilog
 
+***
+### コンパイル
+
+<details>
+<summary>instance '***' of design unit '***' is unresolved in '*.sv' </summary>
+
+- コンパイル時(Makefile)に依存関係のあるsvファイルを忘れずに含めよう
+</details>
+
+<details>
+<summary>何をしても同じエラーが出る</summary>
+
+- いじってるファイル間違ってない? 階層をよく見ろ!
+</details>
+
+
+
+
+
+
+***
+### simulation
 <details>
 <summary>$fdisplay()で記録したログに, ハイインピーダンス(Z)が含まれてしまう</summary>
 
 - 出力信号のbit幅と, それを受け取る(simファイルでの)信号線のbit幅が異なっていた
-</details>
-
-
-
-<details>
-<summary>LEDが点滅しない</summary>
-
-- resetの極性を良く見なさい
-</details>
-
-
-<details>
-<summary>LEDの点滅が速すぎる</summary>
-
-- 1秒のcount間違ってない?
-  - 50MHz => 50 * 10**6 = 50000000
 </details>
 
 
@@ -29,13 +35,6 @@
 - aaa === 'x
   - イコールは3つ
   - シングルクォーテーションは左側だけ
-</details>
-
-
-<details>
-<summary>instance '***' of design unit '***' is unresolved in '*.sv' </summary>
-
-- コンパイル時(Makefile)に依存関係のあるsvファイルを忘れずに含めよう
 </details>
 
 
@@ -54,6 +53,31 @@
 - 0番目のインスタンスを指定したい場合
   - `gen[0].aaa_inst`
 </details>
+
+
+
+
+
+
+
+***
+### 実機
+<details>
+<summary>LEDが点滅しない</summary>
+
+- resetの極性を良く見なさい
+</details>
+
+
+<details>
+<summary>LEDの点滅が速すぎる</summary>
+
+- 1秒のcount間違ってない?
+  - 50MHz => 50 * 10**6 = 50000000
+</details>
+
+
+
 
 
 
