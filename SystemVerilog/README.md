@@ -79,11 +79,19 @@
 
 
 
+***
+### 未解決
+- string型の変数をパラメータとしてインスタンスへ渡すとき。
+  - たしか Illegal operand for constant expression のエラー
+- また、generate文内で上のことをやったとき。
 
 
 
 
 
+
+
+***
 <details>
 <summary>test</summary>
 
