@@ -1,5 +1,8 @@
 # SystemVerilog
 
+
+- Warningはちゃんと読もう!!
+
 ***
 ### コンパイル
 
