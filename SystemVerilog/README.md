@@ -3,6 +3,7 @@
 
 - Warningはちゃんと読もう!!
 
+
 ***
 ### コンパイル
 
@@ -58,6 +59,14 @@
 </details>
 
 
+
+### 合成
+<details>
+<summary>if文の記述は合ってるはずなのにエラーが出る</summary>
+
+- A is not constant エラー
+- if文を書いている always_ffブロックに入る直前の変数宣言で, 行末を `;` ではなく `,` にしてしまっていた. 
+</details>
 
 
 
