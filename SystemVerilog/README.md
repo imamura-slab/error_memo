@@ -21,6 +21,39 @@
 
 
 
+<details>
+<summary>if文の記述は合ってるはずなのにエラーが出る</summary>
+
+- A is not constant エラー
+- if文を書いている always_ffブロックに入る直前の変数宣言で, 行末を `;` ではなく `,` にしてしまっていた. 
+</details>
+
+
+
+
+
+
+***
+### 動的再構成（Intel FPGA）
+<details>
+<summary>各revisionのコンパイルでエラーが出る</summary>
+
+- pr_ip作ったあと, ちゃんとインスタンス化した? （コード追加した?）
+</details>
+
+
+<details>
+<summary>.rbfファイルがない</summary>
+
+*.qsfに以下の2行を追加する
+```
+set_global_assignment -name GENERATE_PR_RBF_FILE ON
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
+```
+</details>
+
+
+
 
 
 
@@ -56,16 +89,6 @@
 ```
 - 0番目のインスタンスを指定したい場合
   - `gen[0].aaa_inst`
-</details>
-
-
-
-### 合成
-<details>
-<summary>if文の記述は合ってるはずなのにエラーが出る</summary>
-
-- A is not constant エラー
-- if文を書いている always_ffブロックに入る直前の変数宣言で, 行末を `;` ではなく `,` にしてしまっていた. 
 </details>
 
 
