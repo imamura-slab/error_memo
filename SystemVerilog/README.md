@@ -92,6 +92,15 @@ set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
 </details>
 
 
+<details>
+<summary>simulationが全く進まない</summary>
+
+- clk <= ~clk; のところに #(CLOCK_PERIOD/2) を書いていなかった... 
+</details>
+
+
+
+
 
 
 
