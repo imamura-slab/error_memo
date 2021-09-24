@@ -99,6 +99,23 @@ set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
 </details>
 
 
+<details>
+<summary>3つの出力が不定値になる</summary>
+
+- 追加説明
+  - r_out, g_out, b_out の3つを出力すると不定値になった. その3つは全て同じ不定値を取っていた. 
+  - r_out, g_out, b_out の3つに同じ値をassignしてみると不定値にはならなかった.
+- 原因
+  - 上位のモジュールで(実際は上の上のモジュールで)
+  ```SystemVerilog
+	.r_out(r_out),
+	.g_out(r_out),
+	.b_out(r_out),
+  ```
+  というふうに全てのポートに同じ信号線(r_out)を繋いでしまっていた
+</details>
+
+
 
 
 
@@ -135,6 +152,7 @@ set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
 
 
 
+***
 ***
 <details>
 <summary>test</summary>
